@@ -1,19 +1,97 @@
 <!DOCTYPE html>
 <html lang="es">
     <head>
-        <title></title>
+        <title>Cotizador || La Suegra</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="css/style.css" rel="stylesheet">
+        <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
     </head>
     <body>
-    <div class="container">
-        <div class="card">
-            
-        </div>
-        
-    </div>
-    <script scr="js/main.js">
+        <main>
+            <div class="container">
+                <div class="card">
+                    <div class="description">
+                        <h1>COTIZADOR DE SEGUROS</h1>
+                        <div class="form">
+                            <form action="">
+                                <label for="marca">Marca</label>
+                                <select name="marca" id="marca" required>
+                                    <option value="seleccione">--Seleccione--</option>
+                                    <option value="volkwagen">Volkwagen</option>
+                                    <option value="ford">Ford</option>
+                                    <option value="chevrolet">Chevrolet</option>
+                                    <option value="fiat">Fiat</option>
+                                    <option value="toyota">Toyota</option>
+                                    <option value="citroen">Citroen</option>
+                                    <option value="peugeot">Peugeot</option>
+                                    <option value="mazda">Mazda</option>
+                                    <option value="chery">Chery</option>
+                                    <option value="renault">Renault</option>
+                                    <option value="audi">Audi</option>
+                                    <option value="dodge">Dodge</option>
+                                    <option value="alfa romeo">Alfa Romeo</option>
+                                    <option value="mercedes-benz">Mercedes-Benz</option>
+                                    <option value="hyundai">Hyundai</option>
+                                    <option value="honda">Honda</option>
+                                    <option value="nissan">Nissan</option>
+                                    <option value="otros">Otros</option>
+                                </select>
+                                <label for="anio">Año</label>
+                                <select name="anio" id="anio" required>
+                                    <option value="seleccione">--Seleccione--</option>
+                                    <option value="2022">2022</option>
+                                    <option value="2021">2021</option>
+                                    <option value="2020">2020</option>
+                                    <option value="2019">2019</option>
+                                    <option value="2018">2018</option>
+                                    <option value="2017">2017</option>
+                                    <option value="2016">2016</option>
+                                    <option value="2015">2015</option>
+                                    <option value="2014">2014</option>
+                                    <option value="2013">2013</option>
+                                    <option value="2012">2012</option>
+                                    <option value="2011">2011</option>
+                                    <option value="2010">2010</option>
+                                    <option value="2009">2009</option>
+                                    <option value="2008">2008</option>
+                                    <option value="2007">2007</option>
+                                    <option value="2006">2006</option>
+                                    <option value="2005">2005</option>
+                                    <option value="2004">2004</option>
+                                    <option value="2003">2003</option>
+                                    <option value="2002">2002</option>
+                                    <option value="2001">2001</option>
+                                    <option value="2000">2000</option>
+                                    <option value="1999">1999</option>
+                                    <option value="1998">1998</option>
+                                    <option value="1997">1997</option>
+                                    <option value="1996">1996</option>
+                                </select>
+                                <div class="plan">
+                                    <label for="plan">Plan</label>
+                                    <select name="plan" id="planes" required>  
+                                        <option value="seleccionar">--Seleccione--</option>
+                                        <option value="resposabilidadCivil">Resposabilidad Civil</option>
+                                        <option value="terceros">Terceros</option>
+                                        <option value="tercerosCompleto">Terceros Completo</option>
+                                        <option value="completo">Completo/option>
+                                        <option value="completoMasGranizo">Completo Más Granizo</option>
+                                        <option value="completoFull">Completo Full</option>
+                                    </select>
+                                </div>
+                                <input type="button" onclick="cotizarSeguro()" class="buttonPrimary u-full-width" value="cotizar"/>
+                                <button type="reset">resetear</button>
+                            </form>
+                            <div class="mensaje">Elija Marca,Año y Plan de su vehiculo</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    
+        <script src="js/main.js"></script>
         
     </script>
     </body>
